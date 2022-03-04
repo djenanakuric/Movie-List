@@ -2,6 +2,9 @@
 import {useEffect, useState} from 'react';
 import Movie from './Movie';
 import Filter from './Filter';
+import { motion } from 'framer-motion';
+import Header from './Header';
+import Footer from './Footer';
 
 function App() {
 
@@ -22,15 +25,18 @@ function App() {
   }
 
   return (
+    
     <div className="App">
-      <Filter popular = {popular} setFiltered = {setFiltered} activeGenre = {activeGenre} />
-      <div className='popular-movies'>
-        {popular.map( movie => {
+     <Header /> 
+      <Filter popular = {popular} setFiltered = {setFiltered} activeGenre = {activeGenre} setActiveGenre = {setActiveGenre}/>
+      <motion.div animate={{opacity:1}} initial={{opacity:0}} exit={{opacity:0}} layout className='popular-movies'>
+        {filtered.map( movie => {
           return (
           <Movie  key={movie.id} movie = {movie}/>
           );
         })}
-      </div>
+      </motion.div>
+      <Footer />
     </div>
   );
 }

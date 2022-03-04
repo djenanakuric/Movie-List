@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 5% 20%;
+  margin: -5% 5%;
+  align-items: center;
+  background-color: rgb(180, 203, 230);
 }
 
 code {
@@ -15,7 +17,7 @@ code {
 
 .popular-movies {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 70px));
+  grid-template-columns: repeat(auto-fit, minmax(154px, 70px));
   grid-column-gap: 1rem;
   grid-row-gap: 2rem;
 }
@@ -39,6 +41,7 @@ h2 {
 }
 
 button {
+  margin-top: 20px;
   margin-right: 2rem;
   min-width: 5rem;
   padding: 0.5rem 1rem;
@@ -56,4 +59,39 @@ button {
 button.active {
   background: rgb(95, 95, 204);
   color: white;
+}
+
+.Header {
+  width: 120%;
+  height: 200px;
+  background-image: url('./movie-background.jpg');
+  background-size: 100% 200px;
+  border-radius: 15px;
+   margin-left: -8%;
+}
+
+.Header h2 {
+  color: rgb(207, 227, 253);
+  font-size: 150%;
+  font-family: cursive ;
+  padding-top: 10%;
+  padding-left: 10%;
+ 
+}
+
+.Footer {
+  background-color: rgb(69, 143, 212);
+  width: 120%;
+
+  color: rgb(207, 227, 253);
+  font-family: cursive ;
+  margin-left: -8%;
+  position: absolute;
+
+}
+
+.Footer h2 {
+  margin-top: 2%;
+  margin-left: 40%;
+  margin-bottom: 2%;
 }
