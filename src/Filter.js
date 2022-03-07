@@ -24,6 +24,25 @@ function Filter ({setActiveGenre, activeGenre, setFiltered, popular}) {
         <button className={activeGenre === 28 ? "active" : ''} onClick={ () => setActiveGenre(28)}>
             Action
         </button>
+        <button className={activeGenre === 12 ? "active" : ''} onClick={ () => setActiveGenre(12)}>
+            Adventure
+        </button>
+        <button className={activeGenre === 16 ? "active" : ''} onClick={ () => setActiveGenre(16)}>
+            Animation
+        </button>
+        <button className={activeGenre === 80 ? "active" : ''} onClick={ () => setActiveGenre(80)}>
+            Crime
+        </button>
+        <button className={activeGenre === 18 ? "active" : ''} onClick={ () => setActiveGenre(18)}>
+            Drama
+        </button>
+        <button className={activeGenre === 14 ? "active" : ''} onClick={ () => setActiveGenre(14)}>
+            Fantasy
+        </button>
+        <button className={activeGenre === 27 ? "active" : ''} onClick={ () => setActiveGenre(27)}>
+            Horror
+        </button>
+        
     </div>
 )
 }
