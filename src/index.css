@@ -86,8 +86,9 @@ button.active {
   color: rgb(207, 227, 253);
   font-family: cursive ;
   margin-left: -8%;
-  position: absolute;
-
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
 }
 
 .Footer h2 {
