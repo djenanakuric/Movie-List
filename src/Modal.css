@@ -52,3 +52,12 @@
     position:absolute;
     margin-left: 15%;
 }
+
+.col1x2 th {
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.col1x2 p {
+    text-align: center;
+}
