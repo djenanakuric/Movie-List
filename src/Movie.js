@@ -14,7 +14,7 @@ return(
         <div className="movieTitle">
             <h2> {movie.title} </h2>
         </div>
-            <img src={'https://image.tmdb.org/t/p/w500'+movie.backdrop_path} alt="" onClick={() => setButtonModal(true)}/>
+            {movie.backdrop_path !== null ? <img src={'https://image.tmdb.org/t/p/w500'+movie.backdrop_path} alt="" onClick={() => setButtonModal(true)}/> : <img src = {'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg'} alt="" onClick={() => setButtonModal(true)}/>}
             <Modal trigger = {buttonModal} buttonModal = {buttonModal} setButtonModal = {setButtonModal} movie= {movie}>
             </Modal>
         </BrowserRouter>
