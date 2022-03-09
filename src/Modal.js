@@ -33,7 +33,7 @@ return (
             <tbody>
                 <tr>
                     <th className='col1x1'> 
-                        <img className='img-info' src={'https://image.tmdb.org/t/p/w500'+props.movie.backdrop_path} />
+                         {props.movie.backdrop_path !== null ? <img className = 'img-info' src={'https://image.tmdb.org/t/p/w500'+props.movie.backdrop_path} alt="" /> : <img className = 'img-info' src = {'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg'} alt="" />}
                     </th>
                     <th className='col1x2'>
                             <tr className='movie-title'> <h1>{props.movie.title}</h1></tr>
