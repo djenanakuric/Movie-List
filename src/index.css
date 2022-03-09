@@ -92,9 +92,10 @@ button.active {
 }
 
 .Footer h2 {
-  margin-top: 2%;
-  margin-left: 40%;
-  margin-bottom: 2%;
+   margin-top: 2%;
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: medium;
 }
 
 .page-item {
