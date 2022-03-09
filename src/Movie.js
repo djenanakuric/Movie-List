@@ -1,6 +1,5 @@
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import {motion} from 'framer-motion';
-import MovieInformation from './MovieInformation';
 import './Modal.css'
 import Modal from './Modal'
 import {useState} from 'react';

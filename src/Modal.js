@@ -38,7 +38,7 @@ return (
                     <th className='col1x2'>
                             <tr className='movie-title'> <h1>{props.movie.title}</h1></tr>
                             <tr>
-                                <th><h3>Original language:</h3></th>
+                                <th><h3>Original language: </h3></th>
                                 <th ><p>{props.movie.original_language}</p></th>
                             </tr>
                             <tr>
@@ -54,8 +54,11 @@ return (
                  
                        
             </tbody>
-           <h2>Owerview: </h2>
-                 <p>{props.movie.overview}</p>      
+            <div movie-overview>
+               <h2>Owerview: </h2>
+                <p>{props.movie.overview}</p>  
+            </div>
+                
             
         </div>
 

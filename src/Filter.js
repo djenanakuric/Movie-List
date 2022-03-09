@@ -42,9 +42,8 @@ function Filter ({setActiveGenre, activeGenre, setFiltered, popular}) {
         <button className={activeGenre === 27 ? "active" : ''} onClick={ () => setActiveGenre(27)}>
             Horror
         </button>
-        
     </div>
-)
+    )
 }
 
 export default Filter;
